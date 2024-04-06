@@ -32,7 +32,7 @@ function handleWitAiResponse(witResponse, chatId) {
     case "Courses":
       return "1. Artificial Intelligence and Data Science\n2. Automobile Engineering\n3. Civil Engineering\n4. Computer Science & Engineering\n5. Computer Science & Engineering (CYBER SECURITY)\n6. Electrical & Electronics Engineering\n7. Electronics and Communication Engineering\n8. Electronics & Instrumentation Engineering\n9. Master of Business Administration\n10. Mechanical Engineering\n11. Information Technology\n";
     case "Admission_Info":
-      return "Admission_Info:GOVERNMENT QUOTA\nB.E/ B.Tech: Apply through TNEA Counselling\nMBA/ M.E: Apply through TANCET/TANCA\nMANAGEMENT QUOTA\nB.E/ B.Tech: Apply through Consortium of Self –Financing Professional, Arts and Science Colleges in Tamil Nadu\nMBA/ M.E: Apply through Common Entrance Test (CET) conducted by the Consortium of Self –Financing Professional, Arts and Science Colleges in Tamil Nadu\nFor further details You can call: 9123547550, 8939221120 (timing : 8:30am-5:00pm)";
+      return "GOVERNMENT QUOTA\nB.E/ B.Tech: Apply through TNEA Counselling\nMBA/ M.E: Apply through TANCET/TANCA\nMANAGEMENT QUOTA\nB.E/ B.Tech: Apply through Consortium of Self –Financing Professional, Arts and Science Colleges in Tamil Nadu\nMBA/ M.E: Apply through Common Entrance Test (CET) conducted by the Consortium of Self –Financing Professional, Arts and Science Colleges in Tamil Nadu\nFor further details You can call: 9123547550, 8939221120 (timing : 8:30am-5:00pm)";
     case "Greeting":
       return "Hello, I am a College Query Bot . You can ask your questions about college.";
     case "Fee":
@@ -69,44 +69,44 @@ function handleWitAiResponse(witResponse, chatId) {
       return "";
     case "faculty_cse":
       return `
-     <p>1. Dr. B. Murugeshwari - Professor & Head - M.E., Ph.D.</p>
-<p>2. Dr. A. Balaji Ganesh - Professor & Dean - R&D - M.S., Ph.D.</p>
-<p>3. Dr. V. Jeyabalaraja - Professor - M.E., Ph.D.</p>
-<p>4. Dr. Jeevaa Katiravan - Professor - M.Tech., Ph.D.</p>
-<p>5. Dr. S. Gunasundari - Professor - M.E., Ph.D.</p>
-<p>6. Dr. P. S. Smitha - Associate Professor - M.E., Ph.D.</p>
-<p>7. Dr. P. Pritto Paul - Associate Professor - M.E., Ph.D.</p>
-<p>8. Dr. M. Usha - Associate Professor - M.E., Ph.D.</p>
-<p>9. Dr. A. Lakshmi Sangeetha - Associate Professor - M.E., Ph.D.</p>
-<p>10. Dr. S. Rajalakshmi - Assistant Professor (G -III) - M.E., Ph.D.</p>
-<p>11. Mrs. T. Subashini - Assistant Professor (G -III) - M.E.</p>
-<p>12. Mrs. B. Hemalatha - Assistant Professor (G -III) - M.E.</p>
-<p>13. Ms. M. Vijayalakshmi - Assistant Professor (G -III) - M.Tech., (Ph.D.)</p>
-<p>14. Dr. A. Rajeswari - Assistant Professor (G -III) - M.Tech., Ph.D.</p>
-<p>15. Mr. K. Sundar - Assistant Professor (G -II) - M.E., (Ph.D.)</p>
-<p>16. Mrs. S. Sridevi - Assistant Professor (G -II) - M.E., M.B.A., (Ph.D.)</p>
-<p>17. Mrs. R. Amirthavalli - Assistant Professor (G -II) - M.E., (Ph.D.)</p>
-<p>18. Mrs. K. Mohanambal - Assistant Professor (G -II) - M.E.</p>
-<p>19. Mr. Dhakshunhaamoorthiy - Assistant Professor (G -II) - M.E., (Ph.D.)</p>
-<p>20. Mrs. K. C. Aarthi - Assistant Professor (G - I) - M.Tech.</p>
-<p>21. Mrs. S. Babitha Rani - Assistant Professor (G - I) - M.E.</p>
-<p>22. Mrs. D. Daya Florance - Assistant Professor (G - I) - M.E.</p>
-<p>23. Mrs. P. Rajeshwari - Assistant Professor (G - I) - M.E.</p>
-<p>24. Mrs. C. Rohini - Assistant Professor (G - I) - M.E.</p>
-<p>25. Mrs. S. Bama - Assistant Professor (G - I) - M.E.</p>
-<p>26. Mrs. A. Jayanthi - Assistant Professor (G - I) - M.E.</p>
-<p>27. Mrs. S. Kayalvizhi - Assistant Professor (G - I) - M.E.</p>
-<p>28. Mrs. C. Bharathi Sri - Assistant Professor (G - I) - M.E.</p>
-<p>29. Mrs. S. Aminta Sabatini - Assistant Professor (G - I) - M.E.</p>
-<p>30. Mrs. S. Almelu - Assistant Professor (G - I) - M.E.</p>
-<p>31. Mrs. Lovelit Jose - Assistant Professor (G - I) - M.Tech.</p>
-<p>32. Mrs. D. Saral Jeeva Jothi - Assistant Professor (G - I) - M.E.</p>
-<p>33. Ms. P. Saranya - Assistant Professor (G - I) - M.E.</p>
-<p>34. Ms. C. Sruthi Nath - Assistant Professor (G - I) - M.E.</p>
+     1. Dr. B. Murugeshwari - Professor & Head - M.E., Ph.D.\n
+2. Dr. A. Balaji Ganesh - Professor & Dean - R&D - M.S., Ph.D.\n
+3. Dr. V. Jeyabalaraja - Professor - M.E., Ph.D.\n
+4. Dr. Jeevaa Katiravan - Professor - M.Tech., Ph.D.\n
+5. Dr. S. Gunasundari - Professor - M.E., Ph.D.\n
+6. Dr. P. S. Smitha - Associate Professor - M.E., Ph.D.\n
+7. Dr. P. Pritto Paul - Associate Professor - M.E., Ph.D.\n
+8. Dr. M. Usha - Associate Professor - M.E., Ph.D.\n
+9. Dr. A. Lakshmi Sangeetha - Associate Professor - M.E., Ph.D.\n
+10. Dr. S. Rajalakshmi - Assistant Professor (G -III) - M.E., Ph.D.\n
+11. Mrs. T. Subashini - Assistant Professor (G -III) - M.E.\n
+12. Mrs. B. Hemalatha - Assistant Professor (G -III) - M.E.\n
+13. Ms. M. Vijayalakshmi - Assistant Professor (G -III) - M.Tech., (Ph.D.)\n
+14. Dr. A. Rajeswari - Assistant Professor (G -III) - M.Tech., Ph.D.\n
+15. Mr. K. Sundar - Assistant Professor (G -II) - M.E., (Ph.D.)\n
+16. Mrs. S. Sridevi - Assistant Professor (G -II) - M.E., M.B.A., (Ph.D.)\n
+17. Mrs. R. Amirthavalli - Assistant Professor (G -II) - M.E., (Ph.D.)\n
+18. Mrs. K. Mohanambal - Assistant Professor (G -II) - M.E.\n
+19. Mr. Dhakshunhaamoorthiy - Assistant Professor (G -II) - M.E., (Ph.D.)\n
+20. Mrs. K. C. Aarthi - Assistant Professor (G - I) - M.Tech.\n
+21. Mrs. S. Babitha Rani - Assistant Professor (G - I) - M.E.\n
+22. Mrs. D. Daya Florance - Assistant Professor (G - I) - M.E.\n
+23. Mrs. P. Rajeshwari - Assistant Professor (G - I) - M.E.\n
+24. Mrs. C. Rohini - Assistant Professor (G - I) - M.E.\n
+25. Mrs. S. Bama - Assistant Professor (G - I) - M.E.\n
+26. Mrs. A. Jayanthi - Assistant Professor (G - I) - M.E.\n
+27. Mrs. S. Kayalvizhi - Assistant Professor (G - I) - M.E.\n
+28. Mrs. C. Bharathi Sri - Assistant Professor (G - I) - M.E.\n
+29. Mrs. S. Aminta Sabatini - Assistant Professor (G - I) - M.E.\n
+30. Mrs. S. Almelu - Assistant Professor (G - I) - M.E.\n
+31. Mrs. Lovelit Jose - Assistant Professor (G - I) - M.Tech.\n
+32. Mrs. D. Saral Jeeva Jothi - Assistant Professor (G - I) - M.E.\n
+33. Ms. P. Saranya - Assistant Professor (G - I) - M.E.\n
+34. Ms. C. Sruthi Nath - Assistant Professor (G - I) - M.E.
 
     `;
     case "faculty_it":
-      return `<p>Dr.JEEVAA KATIRAVAN,  Professor and Head</p>`;
+      return `Dr.JEEVAA KATIRAVAN,  Professor and Head`;
     case "thank_you":
       return "You're welcome! If you have any more questions or need assistance, feel free to ask. Happy to help!";
     case "admission_documents":
