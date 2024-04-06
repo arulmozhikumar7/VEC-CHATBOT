@@ -32,7 +32,7 @@ function handleWitAiResponse(witResponse, chatId) {
     case "Courses":
       return "1. Artificial Intelligence and Data Science\n2. Automobile Engineering\n3. Civil Engineering\n4. Computer Science & Engineering\n5. Computer Science & Engineering (CYBER SECURITY)\n6. Electrical & Electronics Engineering\n7. Electronics and Communication Engineering\n8. Electronics & Instrumentation Engineering\n9. Master of Business Administration\n10. Mechanical Engineering\n11. Information Technology\n";
     case "Admission_Info":
-      return "Here is the admission process";
+      return "Admission_Info:GOVERNMENT QUOTA\nB.E/ B.Tech: Apply through TNEA Counselling\nMBA/ M.E: Apply through TANCET/TANCA\nMANAGEMENT QUOTA\nB.E/ B.Tech: Apply through Consortium of Self –Financing Professional, Arts and Science Colleges in Tamil Nadu\nMBA/ M.E: Apply through Common Entrance Test (CET) conducted by the Consortium of Self –Financing Professional, Arts and Science Colleges in Tamil Nadu\nFor further details You can call: 9123547550, 8939221120 (timing : 8:30am-5:00pm)";
     case "Greeting":
       return "Hello, I am a College Query Bot . You can ask your questions about college.";
     case "Fee":
