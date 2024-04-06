@@ -4,11 +4,11 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const TelegramBot = require("node-telegram-bot-api");
 const path = require("path");
-const { constants } = require("buffer");
+require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const telegramToken = "7196992343:AAH9a2cyR7zYwA11QsKlwa9GTuhX-L1NkZo";
+const telegramToken = process.env.TELEGRAM_TOKEN;
 const bot = new TelegramBot(telegramToken, { polling: true });
 app.use("/pdfs", express.static(path.join(__dirname, "pdfs")));
 app.use(cors());
@@ -39,7 +39,7 @@ function handleWitAiResponse(witResponse, chatId) {
     case "Admission_Info":
       return "Here is the admission process";
     case "Greeting":
-      return "Hello, I am a bot. How can I help you?";
+      return "Hello, I am a College Query Bot . You can ask your questions about college.";
     case "Fee":
       return "For Fee Structure, you can call 9123547550.";
     case "Location":
@@ -67,9 +67,6 @@ function handleWitAiResponse(witResponse, chatId) {
         "- Physics"
       );
     case "Scholarship":
-      // Construct the public URL of the PDF file
-
-      // Send the file as a document
       bot.sendDocument(chatId, "./pdfs/BC-MBC-Scholarship-Form-Fresh.pdf", {
         caption:
           "For information about scholarships, you can download the scholarship form PDF here.",
@@ -119,11 +116,40 @@ function handleWitAiResponse(witResponse, chatId) {
       return "You're welcome! If you have any more questions or need assistance, feel free to ask. Happy to help!";
     case "admission_documents":
       return "TNEA Allotment order" + "12th mark sheet" + "11th mark sheet";
+    case "duplicate_hallticket":
+      bot.sendDocument(
+        chatId,
+        "./pdfs/Application-for-Duplicate-Hall-Ticket.pdf",
+        {
+          caption: "Duplicate Hallticket Application Form",
+        }
+      );
+      return "";
     case "Transport":
       bot.sendDocument(chatId, "./pdfs/TRANSPORT-ROUTE.pdf", {
         caption:
           "Explore the convenience of our college's bus services, covering various routes to ensure easy access for students!",
       });
+      return "";
+    case "TNEA":
+      return "The TNEA code assigned to the college is 1120.";
+
+    case "Placements":
+      const placementsMessage =
+        "For all inquiries related to placements, please <a href='https://velammal.edu.in/placements/' target='_blank' rel='noopener noreferrer'>click here ↗</a>.";
+      bot.sendMessage(chatId, placementsMessage, { parse_mode: "HTML" });
+      return "";
+    case "Library":
+      const libraryMessage =
+        "The college library is in the Bill Gates Block and is occupied in the Ground and First floor of the building. Our Library is Spacious, well ventilated well lighted with a total floor area of 24000 square feet. The Library contains more than 77525 Volumes of  books and 25156 different titles in the discipline of Computer Science, Electronics, Electricals, Instrumentation, Mechanical, Automobile, Civil, Artificial Intelligence& Data Science and Business Administration and 174 National and International Journals and More than 9517 online Journals.\n\nWorking Days : 8.00 AM to 6.00 PM\nAll Holidays : 8.00 AM to 5.00 PM (Except Govt. Holidays)\nVacation Period : 8:00 AM to 5:00 PM";
+      bot.sendMessage(chatId, libraryMessage, { parse_mode: "HTML" });
+      return "";
+    case "Ok":
+      return "If you have any more questions or need assistance, feel free to ask. Happy to help!";
+    case "Exam_Time_Table":
+      const examTimeTableMessage =
+        "You can find all the exam time tables <a href='https://velammal.edu.in/controller-of-examinations-coe/' target='_blank' rel='noopener noreferrer'>here ↗</a>.";
+      bot.sendMessage(chatId, examTimeTableMessage, { parse_mode: "HTML" });
       return "";
     default:
       return "I'm sorry, I didn't understand that. Please try again.";
