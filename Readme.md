@@ -1,4 +1,4 @@
-# Project Name
+# COLLEGE QUERY CHATBOT WITH WIT AI + NODE JS & EXPRESS JS
 
 ## Live Demo
 
