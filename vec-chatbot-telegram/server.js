@@ -30,12 +30,7 @@ function handleWitAiResponse(witResponse, chatId) {
   const intent = witResponse.intents[0]?.name;
   switch (intent) {
     case "Courses":
-      return (
-        "Here are the courses you can take:\n" +
-        "- Artificial Intelligence and Data Science\n" +
-        "- Automobile Engineering\n" +
-        "- Civil Engineering"
-      );
+      return "1. Artificial Intelligence and Data Science\n2. Automobile Engineering\n3. Civil Engineering\n4. Computer Science & Engineering\n5. Computer Science & Engineering (CYBER SECURITY)\n6. Electrical & Electronics Engineering\n7. Electronics and Communication Engineering\n8. Electronics & Instrumentation Engineering\n9. Master of Business Administration\n10. Mechanical Engineering\n11. Information Technology\n";
     case "Admission_Info":
       return "Here is the admission process";
     case "Greeting":
@@ -175,9 +170,6 @@ bot.on("message", async (msg) => {
   }
 });
 
-// Your existing Express route for handling API requests
-
-// Your existing Express server initialization
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
