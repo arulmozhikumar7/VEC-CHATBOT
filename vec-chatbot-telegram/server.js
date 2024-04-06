@@ -146,6 +146,8 @@ function handleWitAiResponse(witResponse, chatId) {
         "You can find all the exam time tables <a href='https://velammal.edu.in/controller-of-examinations-coe/' target='_blank' rel='noopener noreferrer'>here ↗</a>.";
       bot.sendMessage(chatId, examTimeTableMessage, { parse_mode: "HTML" });
       return "";
+    case "Name":
+      return "VELAMMAL ENGINEERING COLLEGE";
     default:
       return "I'm sorry, I didn't understand that. Please try again.";
   }
