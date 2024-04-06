@@ -17,9 +17,12 @@ const App = () => {
       setUserInput("");
       addBotMessage("Typing...", true);
 
-      const response = await axios.post("http://localhost:5000/api/chat", {
-        message: userInput,
-      });
+      const response = await axios.post(
+        "https://vec-chatbot-web.onrender.com/api/chat",
+        {
+          message: userInput,
+        }
+      );
 
       const botResponse = response.data.botResponse;
 
