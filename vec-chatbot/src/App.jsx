@@ -81,7 +81,7 @@ const App = () => {
           <div className="w-full max-w-lg bg-white rounded-lg shadow-md">
             <div className="flex items-center justify-between p-4 text-white border-b rounded-t-lg bg-amber-500">
               <img
-                src="/vec.png"
+                src="https://velammal.edu.in/wp-content/uploads/2021/09/favicon.png"
                 alt=""
                 width={"7%"}
                 height={"7%"}
