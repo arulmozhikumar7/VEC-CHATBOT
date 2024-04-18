@@ -7,7 +7,11 @@ const fs = require("fs");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  })
+);
 app.use(bodyParser.json());
 
 const responses = JSON.parse(fs.readFileSync("responses.json", "utf-8"));
